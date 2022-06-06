@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "satiate",
+  "version": "1.0.0+1.16.5",
+  "name": "Satiate",
+  "description": "A mod adding a satiate command.",
+  "authors": [
+    "vini2003"
+  ],
+  "contact": {
+    "email": "contact@vini2003.xyz"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "vini2003.xyz.satiate.SatiateClient"
+    ],
+    "main": [
+      "vini2003.xyz.satiate.Satiate"
+    ]
+  },
+  "mixins": [
+    "satiate.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.1",
+    "fabric": ">=0.30.0+1.16",
+    "minecraft": "1.16.5"
+  }
+}
